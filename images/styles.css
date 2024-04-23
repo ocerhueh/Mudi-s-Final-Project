@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+
+	--lt-pink: #D07CA8; 
+	--dk-grey: #383738;
+	--lt-blue: #C7F4F8;
+	--orng: #AE502D;
+	--white: #FFFCF8;
+	font-family: "Lugrasimo", Verdana, sans-serif;
+	
+}
+
+header, main, footer{
+	width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+body{
+    
+    font-family: Verdana;
+    color: var(--lt-pink);
+    margin: 0;
+    line-height: 1.35;
+	
+}
+
+/* Styles for the Header, Main, & Footer */
+/* Limits the width, adds a background color and padding, and centers them on the page */
+
+
+/* Shared header and footer styles */
+header {
+	text-align: center;
+    background-image: url(swiss-valley.jpg);
+	background-position: center;
+	background-size: cover;
+	width: 1440px;
+	height: 160px;
+}
+h1, h2, h3{
+    font-weight: bold;
+	color: var(--orng);
+	font-family: "Lugrasimo";
+
+}
+
+
+h1 a{
+	color: var(--lt-pink);
+	text-decoration: none;
+    font-size: 2.5em;
+    margin: 0.67 0;
+	padding: 2rem 1rem;
+}
+
+
+nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    padding: 0;
+    margin: 1em 0;
+}
+
+nav a{
+    display: block;
+    padding: 1rem ;
+	border-style: dashed;
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--lt-pink);
+}
+
+/* nav a.current {
+	
+	color: var(--dk-grey);
+  } */
+
+
+
+nav a:hover{
+	color: var(--dk-grey);
+}
+
+
+nav a.current:link{
+	background-color: var(--lt-blue);
+	
+	
+}
+h2{
+	text-align: center;
+	font-size: 1.4em;
+	padding: 1rem 2rem;
+	padding-top: 0.5rem;
+	
+}
+
+body{
+	background-image: url(gradiant_wallpaprer.jpg);
+}
+
+main > p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+  	max-width: 65ch;
+	padding-bottom: 3.5rem;
+	font-size: 1em;
+}
+
+#views{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+    max-width: 1000px;
+    margin: 1rem auto 3rem auto;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+  	max-width: 65ch;
+
+}
+
+#views img{
+	padding-bottom: 1.5rem;
+}
+
+#views h3{
+	padding-bottom: 1rem;
+	font-size: 1.1em;
+}
+
+
+
+/* Contact page css */
+
+#contact > p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+  	max-width: 65ch;
+	font-size: 1em;
+	color: var(--lt-pink);
+	padding-bottom: 1.5rem;
+
+}
+
+
+
+.center {
+	display: block;
+	align-items: center;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+
+/* form css */
+
+form{
+    width: 300px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* Input, Label, and textarea styles  */
+input, label, textarea{
+    display: block;
+}
+
+/* For the asterisks in the form section */
+.required{
+    color: var(--orng);
+	font-size: 1em;
+	font-weight: bold;
+	display: inline;
+}
+
+
+/* Shared input and textarea Styles */
+input, textarea{
+    margin: 0.25rem 0 1rem 0;
+    width: calc(100% - 8px);
+    border: 2px solid var(--lt-pink);
+	background-color: var(--white);
+}
+
+/* Input and Textarea Focus Styles */
+input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
+    border-color: var(--orng);
+    outline: 2px solid var(--orng);
+}
+
+input:invalid, select:invalid, textarea:invalid{
+	box-shadow: -6px 6px 10px var(--dk-grey);
+}
+
+/* input styles */
+input{
+    height: 2rem;
+    padding: 1px 2px;
+}
+
+/* Fieldset Styles */
+fieldset{
+    display: grid;
+    grid-template-columns: 0.25fr 6fr 0.25fr 6fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 0.35em 0.75em 0.65em 0.75em;
+    border: 2px groove var(--lt-pink);
+}
+
+legend{
+    padding: 0 2px;
+}
+
+/* Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
+input[type=radio] + label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+
+input[type=radio] {
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 0;
+    border-radius: 0;
+}
+
+input[type=radio] + label::before {
+    content: "\00a0";   /* Non-breaking space */
+    font-size: 2.75em;
+    line-height: 0.3;
+    border-radius: 50%;
+    display: inline-block;  
+    height: 21px;
+    width: 22px;
+    text-align: center;
+    margin-right: 16px;
+    border: 2px solid var(--lt-pink);   /* Push focus shadow away */
+    background-color: var(--white);
+    padding: 2px 1px 0 0;
+}
+
+input[type=radio]:checked + label::before {
+    content: "\2022";
+    color: var(--lt-blue);
+    background: var(--white);
+}
+
+input[type=radio]:focus{
+	outline: none;
+}
+
+input[type=radio]:focus + label::before {
+    box-shadow: 0 0 0 2px var(--lt-pink);
+}
+
+/* Textarea Styles */
+textarea{
+    height: 5rem;
+}
+
+/* Submit Button Styles */
+#my-submit{
+    padding: 1rem 8px;
+    margin: 1rem auto;
+    width: 100%;
+    height: auto;
+    background-color: var(--orng);
+    color: var(--white);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Submit Button Hover Styles */
+#my-submit:hover{
+    background-color: var(--lt-blue);
+    color: var(--white);
+}
+
+
+#form {
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+    max-width: 1000px;
+    margin: 1rem auto 3rem auto;
+	justify-content: center;
+	text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--lt-blue);
+	background-size: cover;
+}
