@@ -81,7 +81,7 @@ body{
 /* Shared header and footer styles */
 header {
 	text-align: center;
-    background-image: url(swiss-valley.jpg);
+    background-image: url(images/swiss-valley.jpg);
 	background-position: center;
 	background-size: cover;
 	width: 1440px;
@@ -148,7 +148,7 @@ h2{
 }
 
 body{
-	background-image: url(gradiant_wallpaprer.jpg);
+	background-image: url(images/gradiant_wallpaprer.jpg);
 }
 
 main > p{
